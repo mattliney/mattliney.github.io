@@ -1,5 +1,8 @@
 body {
-    font-family: 'Century Gothic', sans-serif;    
+    font-family: 'Century Gothic', sans-serif;
+    background-color: #7da4e3;    
+    text-align: center !important;
+    margin: auto !important;
 }
 canvas {
    outline: black 3px solid;
