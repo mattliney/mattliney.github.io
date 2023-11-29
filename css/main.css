@@ -13,12 +13,61 @@ canvas {
   left: 25%;
   background-color: #f5f5f5;
   width: 50%;
-  height: 100%;
+  height: auto;
   align-items: center;
   padding: 10px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
 }
 
 .gap{
   margin-bottom: 25px;
+  border-bottom: 2px solid #7da4e3;
 }
 
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Style your button */
+.my-button {
+  background-color: #7da4e3; /* Green */
+  color: white;
+  padding: 10px 20px; /* Add padding for a better look */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border: 2px solid #7da4e3; /* Add a border to the button */
+  transition: background-color 0.3s; /* Add a smooth color transition */
+}
+
+.my-button:hover {
+  background-color: #5f7eaf;
+}
+
+.container {
+  display: flex;
+  align-items: left;
+}
+
+.text {
+  flex: 1; 
+  margin-right: 20px; 
+  margin-left: 0; 
+}
+
+.image {
+  flex: 0;
+  margin-top: 0px;
+}
