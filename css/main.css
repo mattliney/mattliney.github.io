@@ -25,6 +25,10 @@ canvas {
   border-bottom: 2px solid #7da4e3;
 }
 
+.gap2{
+  margin-bottom: 25px;
+}
+
 
 button {
   border: none;
