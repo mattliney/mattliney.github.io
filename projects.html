@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/main.css" />
+<html>
+<head>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="content">
+    <h1>Matthew Liney</h1>
+    <a href="index.html" class="my-button">Home</a>
+    <a href="projects.html" class="my-button">Projects</a>
+    <a href="contact.html" class="my-button">Contact</a>
+    <p class="gap"></p>
+
+    <p class="collapse-button" onclick="ToggleCollapseContent('section1')">Hello</p>
+
+    <div class = "collapsible-content" id = "section1">
+
+        <p>mama</p>
+
+    </div>
+
+
+</div>
+</body>
+</html>
+
+<script>
+
+    // add one for each new section
+    var visibility = {
+        section1: false,
+        section2: false
+    }
+
+    function ToggleCollapseContent(sectionID) {
+
+        var content = document.getElementById(sectionID);
+        visibility[sectionID] = !visibility[sectionID];
+
+        if(visibility[sectionID])
+        {
+            content.style.display = "block";
+        }
+        else
+        {
+            content.style.display = "none";
+        }
+
+    }
+
+</script>
