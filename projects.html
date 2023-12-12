@@ -131,7 +131,18 @@
         <div class = "container">
 
             <div >
-                <p>PLACEHOLDERTEXT PLACEHOLDERTEXT PLACEHOLDERTEXT PLACEHOLDERTEXT</p>
+                <p>In this section, I am going to describe just two of the many projects I worked on as part of the degree. These were Rust/CUDA particle simulation, and C++ advanced programming. Rust and CUDA was my first attempt at creating multi-threaded software. The goal of the module was to create a particle simulation in both languages respectively. The Rust solution specifically had to be structured in a pipeline. The Rust program was divided into different sections, one for moving the particles and calculating their physics in the air, another for calculating their position on the canvas and drawing it, and so on. Because the particle simulation had to handle hundreds-of-thousands of particles, the program had to be multithreaded. The CUDA program worked similarly. Overall, I enjoyed my work with Rust. It is a fun language to use, and makes multithreading more intuitive. I plan on using it in future projects. CUDA, however, was more cumbersome to use. CUDA is only really used for graphics programming, and can only be used on NVIDIA graphics cards. Before the module began, I had never used Rust or CUDA. Therefore, I had to learn these languages at the same time in a short span of time. Despite this, I ended up getting 84%.</p>
+            </div>
+    
+            <div>
+            </div>
+    
+        </div>
+
+        <div class = "container">
+
+            <div >
+                <p>Advanced programming was a C++ module where I had to create a program that read, and solved word searches. It does this by first reading in the puzzle, and a list of the answers. Using this, it can solve any properly formatted puzzle. Sounds easy, but the challenge was not to simply create this. The program had to complete the puzzles within a time limit, the faster the better. It was also being subjected to Parasoft tests, which enforce rules that influence how you program. The penalties applied by parasoft were taken off the final mark. These penalties could be as small as properly following C++ naming conventions, to properly disposing of variables, as C++ does not do this automatically and will cause memory leaks if left unchecked. With this in mind, I scored 97%. Just about as perfect as a C++ program could be.</p>
             </div>
     
             <div>
@@ -164,7 +175,7 @@
             <div class = "container">
     
                 <div >
-                    <p>PLACEHOLDERTEXT PLACEHOLDERTEXT PLACEHOLDERTEXT PLACEHOLDERTEXT</p>
+                    <p>still working on this.</p>
                 </div>
         
                 <div>
@@ -175,6 +186,39 @@
         </div>
     
         <!-- SECTION 4 END -->
+    
+        <p class="gap"></p>
+
+        <!-- SECTION 5 -->
+
+        <div class = "container">
+
+            <div class = "text">
+                <p><b>  Treasure For Two</b></p>
+            </div>
+    
+            <div >
+                <p class="collapse-button" onclick="ToggleCollapseContent('section5')">Show</p>
+            </div>
+    
+        </div>
+    
+        <div class = "collapsible-content" id = "section5">
+    
+            <div class = "container">
+    
+                <div >
+                    <p>PLACEHOLDERTEXT PLACEHOLDERTEXT PLACEHOLDERTEXT PLACEHOLDERTEXT</p>
+                </div>
+        
+                <div>
+                </div>
+        
+            </div>
+    
+        </div>
+    
+        <!-- SECTION 5 END -->
     
         <p class="gap"></p>
 
@@ -190,7 +234,8 @@
         section2: false,
         section3: false,
         section4: false,
-        section5: false
+        section5: false,
+        section6: false
     }
 
     function ToggleCollapseContent(sectionID) {
