@@ -98,3 +98,10 @@ button {
 .collapse-button:hover {
   background-color: #5f7eaf;
 }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
