@@ -162,7 +162,7 @@
         <div class = "container">
 
             <div class = "text">
-                <p><b>  Procedural Generation</b></p>
+                <p><b>  Procedural Generation - City Builder</b></p>
             </div>
     
             <div >
@@ -171,19 +171,46 @@
     
         </div>
     
+        
         <div class = "collapsible-content" id = "section4">
+    
+            <p>Procedural generation is a project I worked on for fun in my own time. I am always quite satisfied when I create a piece of software that results in some kind of graphical display, be it a user interface, or a particle system. In this case, I wanted to implement some fairly simple procedural generation algorithms just to see the results. I initially chose to create a Wave Function Collapse (WFC) program. Turns out, WFC has more to do with quantum mechanics and dead cats than I had originally anticipated. Thankfully no cats were harmed in the creation of the program.
+            </p>
+
+            <div class = "container">
+    
+                <div class="text">
+                    <p>WFC works as follows: The map is generated using a set of tiles, an array of initially empty cells, and some adjacency rules. Initially, the cells have a domain size that encompasses all of the tiles. That is to say, the cells can be any one of the tiles. When a cell is collapsed, filled in with one of the tiles, it lowers the domain size of the adjacent cells. In my example, if a cell is collapsed and is given the grass tile, the adjacent tiles can only be grass, water, or a bush. The tree is eliminated from the domain of the adjacent tiles. Initially, a random cell is collapsed, giving it a random tile. From there, the next cell with the smallest domain is collapsed. Repeat until all cells have collapsed. This approach to map creation is fine. I was satisfied when I finally got it to work but, in hindsight, it doesn’t look amazing. Sometimes, the generations look a little bit wonky, and it could never create rivers in a way that satisfied me. Likewise, WFC is vulnerable to error if a domain of a cell is reduced to zero.</p>
+                </div>
+        
+                <div class="image" style="margin-top: 3%;">
+                    <img src="images/wfc.gif" width="330" height="240" alt="">
+                  </div>
+        
+            </div>
+
+            <p>Following this, I decided to pick a different algorithm to implement. This was a good decision, as cellular automata is way better. Initially, I created a simple implementation of cellular automata with white tiles on a black background. CA works similarly to WFC, with an array of cells and adjacency rules. Initially, the cells are filled in with random sound. This could be sound ranging from 0 to 1 or a boolean 0 or 1. In my case, I used a boolean. Using the random sound, you iterate through the array, and change tiles based on whats around them. A 1, or land tile, will become a 0, or water tile, if it is surrounded by >4 water tiles. The opposite is also true. This is similar to Conway’s Game of Life.</p>
     
             <div class = "container">
     
-                <div >
-                    <p>still working on this.</p>
+                <div class="text" style="margin-top: 5%;">
+                    <p>After implementing this with simpler graphics, I immediately saw the potential. The land mass this algorithm creates is ripe for a more advanced graphical implementation, and I immediately got to working on new graphics. No longer simple black and white tiles, I shifted the perspective to an isometric view of the island, and created isometric cube sprites for land and water. This was already looking way better, and I had fun building little scenes with the isometric cubes I drew. Back in the program, I decided to add a second pass to the algorithm, one that populates the map with trees.</p>
                 </div>
         
-                <div>
-                </div>
+                <div class="image" style="margin-top: 3%;">
+                    <img src="images/gen.gif" width="330" height="240" alt="">
+                  </div>
         
             </div>
-    
+
+            <p>The next logical step was to add some interactivity. Place houses, farms, shops, and roads that automatically pick the correct sprite based on the adjacent roads. I got really into drawing these little buildings. Finally, I decided to recreate the program in 3D. This concluded the project, as I had started to lose interest by this point. Overall, I think the city builder program is a lot of fun to distract myself with.</p>
+
+            <div class="image" style="margin-top: 3%;">
+                <img src="images/build.PNG" width="100%" height="100%" alt="">
+              </div>
+
+            <p>You can build a city too by downloading the program from Itch.</p>
+
         </div>
     
         <!-- SECTION 4 END -->
